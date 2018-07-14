@@ -1,0 +1,62 @@
+body {
+    background: white;
+}
+
+.cloud3 {
+    background: url("../images/cloud3.jpg");
+    background-repeat: no-repeat;
+    height: 335px;
+
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 60px;
+}
+
+p {
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.social-content {
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+
+h6 {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+#github, #linkedin, #stackoverflow {
+    width: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+
+h3 {
+    color: orange;
+    text-align: center;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px){
+
+    #linkedin, #stackoverflow, #github {
+        width: 7%
+    }
+}
+

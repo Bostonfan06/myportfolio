@@ -1,0 +1,106 @@
+body {
+    background: white;
+}
+
+.about-content {
+    background-image: url(../images/clouds.jpg);
+    display: block;
+    padding: 7%;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+h1
+ {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80px;
+}
+
+#myself {
+    width: 55%;
+    display: block;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+.social-content {
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+
+h6 {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+#github, #linkedin, #stackoverflow {
+    width: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+
+#pitch {
+    color: orange;
+}
+
+p { 
+    color: black;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px){
+
+    h1 {
+        font-size: 47px;
+    }
+
+    #linkedin, #stackoverflow, #github {
+        width: 10%
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+    h1 {
+        font-size: 76px
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    #myself {
+        margin-top: 30%;
+        width: 75%;
+        display: block;
+        margin-left: 20%;
+    }
+
+    h1 {
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 49px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    h1 {
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 65px;
+    }
+
+    #myself {
+        margin-top: 15%;
+        width: 62%;
+        display: block;
+        margin-left: 20%;
+    }
+}
+

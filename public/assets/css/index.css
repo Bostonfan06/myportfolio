@@ -1,0 +1,165 @@
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/mountain.jpg');
+    /* Set a specific height */
+    min-height: 500px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h5 {
+    color: white; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px;
+    font-size: 60px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#background-bar {
+    color: white;
+    background:white;
+    margin: auto;
+    padding: 50px;
+}
+
+#me {
+    height: 75%;
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 60px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 70px;
+    margin-top: 25px;
+}
+
+.box-shadow {
+    background: lightgrey;
+    opacity: 0.2;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 20px;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px
+}
+
+p {
+    font-size: 22px;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.btn {
+    width: 100px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: right;
+    transform: rotate(-90deg);
+    margin-left: 91%;
+    font-size: 90PX;
+    margin-top: 65px;
+    z-index: -1;
+    color: lightgrey;
+    opacity: 0.3;
+}
+
+h3 {
+    color: #80808091;
+    text-align: left;
+    line-height: 1px;
+    font-size: 120px;
+    letter-spacing: 70px;
+    position: relative;
+    z-index: -1;
+}
+
+.parallax-2 {
+    /* The image used */
+    background-image: url('../images/bear.jpg');
+    /* Set a specific height */
+    min-height: 500px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.social-content {
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+
+h6 {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+#github, #linkedin, #stackoverflow {
+    width: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 475px){
+
+    #linkedin, #stackoverflow, #github {
+        width: 7%
+    }
+
+    h5 {
+        padding: 85px;
+        font-size: 60px
+    }
+
+    h3 {
+        font-size: 75px;
+        letter-spacing: 3px;
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+    h3 {
+        font-size: 100px;
+        letter-spacing: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    h3 {
+        letter-spacing: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+
+    h3 {
+        letter-spacing: 62px;
+    }
+}
