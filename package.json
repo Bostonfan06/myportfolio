@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Bostonfan06/myportfolio/issues"
   },
-  "homepage": "https://github.com/Bostonfan06/myportfolio#readme",
+  "homepage": "https://Bostonfan06.github.io/myportfolio",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
