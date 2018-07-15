@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path')
-
+var bodyParser = require('body-parser')
 var PORT = process.env.PORT || 8080
 
 //Routes to all HTML Pages//
