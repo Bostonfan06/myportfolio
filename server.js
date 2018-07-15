@@ -9,23 +9,19 @@ var PORT = process.env.PORT || 8080
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname + '/index.html'));
-});
-
-app.get('/home', function(req, res){
-  res.sendFile(path.join(__dirname + '/opening.html'));
+  res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 app.get('/projects', function(req, res){
-  res.sendFile(path.join(__dirname + '/projects.html'));
+  res.sendFile(path.join(__dirname + '/public/projects.html'));
 });
 
 app.get('/about', function(req, res){
-  res.sendFile(path.join(__dirname + '/about.html'));
+  res.sendFile(path.join(__dirname + '/public/about.html'));
 });
 
 app.get('/contact', function(req, res){
-  res.sendFile(path.join(__dirname + '/contact.html'));
+  res.sendFile(path.join(__dirname + '/public/contact.html'));
 });
 
 require('./routes/html-routes.js')(app)
