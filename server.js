@@ -6,27 +6,23 @@ var PORT = process.env.PORT || 8080
 
 //Routes to all HTML Pages//
 
-app.use(express.static(__dirname + '/public'));
-app.use(express.static('public'))
+app.use('/public', express.static(__dirname + '/public'));
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
 
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.get('/projects', function(req, res){
-  res.sendFile(path.join(__dirname + 'public/projects.html'));
+  res.sendFile(path.join(__dirname + '/projects.html'));
 });
 
 app.get('/about', function(req, res){
-  res.sendFile(path.join(__dirname + 'public/about.html'));
+  res.sendFile(path.join(__dirname + '/about.html'));
 });
 
 app.get('/contact', function(req, res){
-  res.sendFile(path.join(__dirname + 'public/contact.html'));
+  res.sendFile(path.join(__dirname + '/contact.html'));
 });
 
 require('./routes/html-routes.js')(app)
