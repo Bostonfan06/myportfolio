@@ -6,7 +6,7 @@ var PORT = process.env.PORT || 8080
 
 //Routes to all HTML Pages//
 
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 app.use(express.static('public'))
 
 app.use(bodyParser.json());
@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname + 'public/index.html'));
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.get('/projects', function(req, res){
