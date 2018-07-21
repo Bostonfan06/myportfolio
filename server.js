@@ -10,19 +10,19 @@ app.use('/public', express.static(__dirname + '/public'));
 
 
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname + '/index.html'));
+  res.send(path.join(__dirname + '/index.html'));
 });
 
 app.get('/projects', function(req, res){
-  res.sendFile(path.join(__dirname + '/projects.html'));
+  res.send(path.join(__dirname + '/projects.html'));
 });
 
 app.get('/about', function(req, res){
-  res.sendFile(path.join(__dirname + '/about.html'));
+  res.send(path.join(__dirname + '/about.html'));
 });
 
 app.get('/contact', function(req, res){
-  res.sendFile(path.join(__dirname + '/contact.html'));
+  res.send(path.join(__dirname + '/contact.html'));
 });
 
 require('./routes/html-routes.js')(app)

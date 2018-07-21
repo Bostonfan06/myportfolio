@@ -6,18 +6,18 @@ var path = require('path');
 module.exports = function (app) {
 
 app.get('/', function(req, res){
-res.sendFile(path.join(__dirname + '/index.html'));
+res.send(path.join(__dirname + '/index.html'));
 });
 
 app.get('/projects', function(req, res){
-res.sendFile(path.join(__dirname + 'public/projects.html'));
+res.send(path.join(__dirname + '/projects.html'));
 });
 
 app.get('/about', function(req, res){
-res.sendFile(path.join(__dirname + 'public/about.html'));
+res.send(path.join(__dirname + '/about.html'));
 });
 
 app.get('/contact', function(req, res){
-res.sendFile(path.join(__dirname + 'public/contact.html'));
+res.send(path.join(__dirname + '/contact.html'));
 });
 }
